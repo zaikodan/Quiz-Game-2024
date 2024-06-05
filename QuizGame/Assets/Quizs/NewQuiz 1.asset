@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 72697466b04e3cb4f96a1ee0f15a9685, type: 3}
-  m_Name: NewQuiz
+  m_Name: NewQuiz 1
   m_EditorClassIdentifier: 
-  question: 2+2
+  question: 3+2
   answers:
-  - 1
   - 5
   - 4
-  - 3
+  - 6
+  - 2
   correctAnswer: 0
   theme: 1
   dificulty: 0

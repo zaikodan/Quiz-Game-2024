@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class QuizManager : MonoBehaviour
 {
-    private Quiz[] quizList;
-    private Quiz currentQuiz;
+    [SerializeField] private Quiz[] quizList;
+    [SerializeField] private Quiz currentQuiz;
+
+    [SerializeField] Quiz.Dificulty dificulty;
+    [SerializeField] Quiz.Theme theme;
 
     public void SelectQuiz(Quiz.Theme themeSelected, Quiz.Dificulty dificultySelected)
     {
@@ -13,10 +16,16 @@ public class QuizManager : MonoBehaviour
         if(quiz.GetDificulty == dificultySelected && quiz.GetTheme == themeSelected)
         {
             currentQuiz = quiz;
+            UIManager.instance.UpdateQuestion(currentQuiz);
         }
         else
         {
             SelectQuiz(themeSelected, dificultySelected);
         }
+    }
+
+    private void Start()
+    {
+        SelectQuiz(theme, dificulty);
     }
 }
