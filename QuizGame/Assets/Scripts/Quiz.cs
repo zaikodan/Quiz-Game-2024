@@ -16,6 +16,7 @@ public class Quiz : ScriptableObject
     [SerializeField]
     private Dificulty dificulty;
 
+
     public string Question { get => question; }
     public string[] Answers { get => answers; }
     public Theme GetTheme { get => theme; }
