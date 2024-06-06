@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72697466b04e3cb4f96a1ee0f15a9685, type: 3}
   m_Name: NewQuiz 2
   m_EditorClassIdentifier: 
-  question: 
+  question: sfsfsfs
   answers:
-  - 
-  - 
-  - 
-  - 
+  - sfs
+  - sfsfs
+  - fsf
+  - sfsf
   correctAnswer: 0
-  theme: 0
+  theme: 1
   dificulty: 0
