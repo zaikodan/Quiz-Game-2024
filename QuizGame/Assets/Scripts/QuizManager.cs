@@ -24,8 +24,5 @@ public class QuizManager : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        SelectQuiz(theme, dificulty);
-    }
+
 }
