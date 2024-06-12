@@ -7,10 +7,7 @@ public class QuizManager : MonoBehaviour
     [SerializeField] private Quiz[] quizList;
     [SerializeField] private Quiz currentQuiz;
 
-    [SerializeField] Quiz.Dificulty dificulty;
-    [SerializeField] Quiz.Theme theme;
-
-    public void SelectQuiz(Quiz.Theme themeSelected, Quiz.Dificulty dificultySelected)
+    public void SelectQuiz(Quiz.Theme themeSelected, Quiz.Difficulty dificultySelected)
     {
         Quiz quiz = quizList[Random.Range(0, quizList.Length)];
         if(quiz.GetDificulty == dificultySelected && quiz.GetTheme == themeSelected)

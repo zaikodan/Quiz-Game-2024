@@ -14,16 +14,16 @@ public class Quiz : ScriptableObject
     [SerializeField]
     private Theme theme;
     [SerializeField]
-    private Dificulty dificulty;
+    private Difficulty dificulty;
 
 
     public string Question { get => question; }
     public string[] Answers { get => answers; }
     public Theme GetTheme { get => theme; }
-    public Dificulty GetDificulty { get => dificulty; }
+    public Difficulty GetDificulty { get => dificulty; }
 
     public enum Theme { Portuguese, Math, Geography};
-    public enum Dificulty { Easy, Medium, Hard};
+    public enum Difficulty { Easy, Medium, Hard};
 
     public bool CheckAnswer(int answerSelected)
     {
